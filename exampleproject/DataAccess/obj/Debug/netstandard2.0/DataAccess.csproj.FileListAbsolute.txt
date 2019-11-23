@@ -1,0 +1,11 @@
+C:\exampleproject\exampleproject\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\exampleproject\exampleproject\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\exampleproject\exampleproject\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\exampleproject\exampleproject\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+C:\exampleproject\exampleproject\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+C:\exampleproject\exampleproject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\exampleproject\exampleproject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\exampleproject\exampleproject\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\exampleproject\exampleproject\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\exampleproject\exampleproject\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\exampleproject\exampleproject\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb

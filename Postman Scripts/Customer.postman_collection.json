@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "5ab0b8b8-8b4f-4ba9-8567-8b515b0d9eec",
+		"name": "Customer",
+		"description": "CRUD of Customer",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get list of Customer",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "abcd1234",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44313/api/customer/GetCustomersList",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44313",
+					"path": [
+						"api",
+						"customer",
+						"GetCustomersList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer by Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "abcd1234"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44313/api/customer/GetCustomer/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44313",
+					"path": [
+						"api",
+						"customer",
+						"GetCustomer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "abcd1234"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 1,\r\n    \"FullName\": \"Allan Valdez\",\r\n    \"DOB\": \"1996-04-01T00:00:00\",\r\n    \"Age\": 23,\r\n    \"AddressList\": [\r\n        {\r\n            \"Addressline1\": \"Address1Created\",\r\n            \"Addressline2\": \"Address2Created\",\r\n            \"City\": \"CityCreated\",\r\n            \"State\": \"StateCreated\"\r\n        },\r\n         {\r\n            \"Addressline1\": \"test\",\r\n            \"Addressline2\": \"test\",\r\n            \"City\": \"test\",\r\n            \"State\": \"test\"\r\n        }\r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44313/api/customer/CreateCustomer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44313",
+					"path": [
+						"api",
+						"customer",
+						"CreateCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Customer",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "abcd1234"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"Id\":\"2\",\r\n   \"FullName\":\"Allan Updated\",\r\n   \"DOB\":\"04-01-1991\",\r\n  \r\n  \"AddressList\": [\r\n    {\r\n      \"Addressline1\":\"Aquarius\",\r\n      \"Addressline2\":\"Batimana\",\r\n      \"City\":\"Valenzuela\",\r\n      \"State\":\"StateTest\"\r\n    }\r\n  ]\r\n}"
+				},
+				"url": {
+					"raw": "https://localhost:44313/api/customer/UpdateCustomer",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44313",
+					"path": [
+						"api",
+						"customer",
+						"UpdateCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer by Id",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "abcd1234"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44313/api/customer/DeleteCustomer/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44313",
+					"path": [
+						"api",
+						"customer",
+						"DeleteCustomer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ExampleErrorLog",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"type": "text",
+						"value": "abcd1234"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:44313/api/customer/ExampleErrorLog",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44313",
+					"path": [
+						"api",
+						"customer",
+						"ExampleErrorLog"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "abcd1234",
+				"type": "string"
+			}
+		]
+	},
+	"protocolProfileBehavior": {}
+}
